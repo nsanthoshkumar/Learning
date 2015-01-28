@@ -18,5 +18,19 @@ public class TreeProblems {
 		
 		
 	}
+	public int findNumOfLeaves(Node root){
+		int left=0,right=0;
+		if(root!=null){
+			left=getHeight(root.leftChild);
+			right=getHeight(root.rightChild);
+			//left++;
+			//right++;
+		}
+		
+		return left+right+1;
+		
+		
+	}
+	
 
 }
